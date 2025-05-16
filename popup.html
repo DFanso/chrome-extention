@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Viewer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 15px;
+      width: 100%;
+      cursor: pointer;
+    }
+    #profileInfo {
+      margin-top: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      min-height: 50px;
+      white-space: pre-wrap; /* To preserve formatting of JSON response */
+    }
+  </style>
+</head>
+<body>
+  <h2>Profile Information</h2>
+  <input type="text" id="accessToken" placeholder="Enter Access Token">
+  <button id="fetchProfileBtn">Fetch Profile</button>
+  <div id="profileInfo"></div>
+  <script src="popup.js"></script>
+</body>
+</html> 
